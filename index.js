@@ -148,7 +148,7 @@ class Instructor extends Lambdasian {
     super(person);
     this.specialty = person.specialty;
     this.favLanguage = person.favLanguage;
-    this.catchPhrase = "Don't forget the homies";
+    this.catchPhrase = person.catchPhrase;
   }
 
   demo(subject) {
@@ -214,6 +214,7 @@ class ProjectManager extends Instructor {
     super(person);
     this.gradClassName = person.gradClassName;
     this.favInstructor = person.favInstructor;
+    // console.log(person);
   }
 
   standUp(channel) {
