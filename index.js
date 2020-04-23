@@ -182,7 +182,6 @@ class Student extends Lambdasian {
     this.className = person.className;
     this.favSubjects = person.favSubjects;
     this.grade = person.grade;
-    console.log(person);
   }
 
   listSubjects() {
@@ -198,8 +197,7 @@ class Student extends Lambdasian {
   }
 
   graduate() {
-    return (this.grade >= 70) ? `${this.name} is ready to graduate.` : `${this.name} needs to increase their assignments\' grades to graduate.`;
-    console.log(this.graduate());
+    return (this.grade >= 70) ? `${this.name} is ready to graduate.` : `${this.name} needs to increase their assignments\'s grades to graduate.`;
   }
 }
 
